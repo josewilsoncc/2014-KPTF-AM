@@ -50,4 +50,4 @@ KPTF.Util.am_version=1.0;
 KPTF.Util.am_log="Util basado en kptf.js";
 
 //se añade el AM al arreglo de adicion de modular
-KPTF.añadirAM(KPTF.Util);
+KPTF.addAM(KPTF.Util);

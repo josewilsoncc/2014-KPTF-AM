@@ -95,4 +95,4 @@ KPTF.Elemento3D.am_version=1.0;
 KPTF.Elemento3D.am_log="Elemento basado en kptf.js";
 
 //se añade el AM al arreglo de adicion de modular
-KPTF.añadirAM(KPTF.Elemento3D);
+KPTF.addAM(KPTF.Elemento3D);

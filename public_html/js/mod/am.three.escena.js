@@ -54,4 +54,4 @@ KPTF.Escena.am_version=1.0;
 KPTF.Escena.am_log="Escena basada en Three.js";
 
 //se añade el AM al arreglo de adicion de modular
-KPTF.añadirAM(KPTF.Escena);
+KPTF.addAM(KPTF.Escena);

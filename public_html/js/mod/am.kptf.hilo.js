@@ -128,4 +128,4 @@ KPTF.Hilo.am_version=1.0;
 KPTF.Hilo.am_log="Hilo basado en kptf.js";
 
 //se añade el AM al arreglo de adicion de modular
-KPTF.añadirAM(KPTF.Hilo);
+KPTF.addAM(KPTF.Hilo);

@@ -31,4 +31,4 @@ KPTF.LuzAmbiente.am_version=0.1;
 KPTF.LuzAmbiente.am_log="Luz de ambiente basada en Three.js";
 
 //se añade el AM al arreglo de adicion de modular
-KPTF.añadirAM(KPTF.LuzAmbiente);
+KPTF.addAM(KPTF.LuzAmbiente);

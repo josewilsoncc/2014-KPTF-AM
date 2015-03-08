@@ -91,4 +91,4 @@ KPTF.Renderizador.am_version=1.0;
 KPTF.Renderizador.am_log="Renderizador basado en Three.js";
 
 //se añade el AM al arreglo de adicion de modular
-KPTF.añadirAM(KPTF.Renderizador);
+KPTF.addAM(KPTF.Renderizador);

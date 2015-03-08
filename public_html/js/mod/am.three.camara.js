@@ -83,4 +83,4 @@ KPTF.Camara.am_version=1.0;
 KPTF.Camara.am_log="Camara basada en Three.js";
 
 //se añade el AM al arreglo de adicion de modular
-KPTF.añadirAM(KPTF.Camara);
+KPTF.addAM(KPTF.Camara);

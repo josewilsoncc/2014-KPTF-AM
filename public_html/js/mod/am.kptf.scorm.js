@@ -101,4 +101,4 @@ KPTF.SCORM.am_version = 1.0;
 KPTF.SCORM.am_log = "SCORM basado en pipwerks";
 
 //se añade el AM al arreglo de adicion de modular
-KPTF.añadirAM(KPTF.SCORM);
+KPTF.addAM(KPTF.SCORM);

@@ -74,4 +74,4 @@ KPTF.Sonido.am_version=1.0;
 KPTF.Sonido.am_log="Sonido basado en Buzz.js";
 
 //se añade el AM al arreglo de adicion de modular
-KPTF.añadirAM(KPTF.Sonido);
+KPTF.addAM(KPTF.Sonido);

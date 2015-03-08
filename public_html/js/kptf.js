@@ -35,7 +35,7 @@ KPTF.AM = new Array();
  * Añade un AM al arreglo de AM
  * @param {object} am Es el AM que se añadira
  */
-KPTF.añadirAM = function (am) {
+KPTF.addAM = function (am) {
   KPTF.AM.push(am);
 };
 

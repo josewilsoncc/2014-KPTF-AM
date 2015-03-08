@@ -61,4 +61,4 @@ KPTF.Prueba.am_version=1.0;
 KPTF.Prueba.am_log="Prueba basado en kptf.js";
 
 //se añade el AM al arreglo de adicion de modular
-KPTF.añadirAM(KPTF.Prueba);
+KPTF.addAM(KPTF.Prueba);

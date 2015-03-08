@@ -80,4 +80,4 @@ KPTF.Teclado.am_version=1.0;
 KPTF.Teclado.am_log="Teclado basado en kptf.js";
 
 //se añade el AM al arreglo de adicion de modular
-KPTF.añadirAM(KPTF.Teclado);
+KPTF.addAM(KPTF.Teclado);

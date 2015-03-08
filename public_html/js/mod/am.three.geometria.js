@@ -79,4 +79,4 @@ KPTF.Geometria.am_version = 1.0;
 KPTF.Geometria.am_log = "Geometrias basado en three.js";
 
 //se añade el AM al arreglo de adicion de modular
-KPTF.añadirAM(KPTF.Geometria);
+KPTF.addAM(KPTF.Geometria);

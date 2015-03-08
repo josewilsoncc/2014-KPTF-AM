@@ -73,4 +73,4 @@ KPTF.ElementoFisico.am_version=1.0;
 KPTF.ElementoFisico.am_log="Elemento fisico basado en Physi.js";
 
 //se añade el AM al arreglo de adicion de modular
-KPTF.añadirAM(KPTF.ElementoFisico);
+KPTF.addAM(KPTF.ElementoFisico);

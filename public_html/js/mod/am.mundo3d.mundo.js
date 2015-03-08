@@ -102,4 +102,4 @@ KPTF.Mundo3D.am_version=1.0;
 KPTF.Mundo3D.am_log="Elemento basado en kptf.js";
 
 //se añade el AM al arreglo de adicion de modular
-KPTF.añadirAM(KPTF.Mundo3D);
+KPTF.addAM(KPTF.Mundo3D);

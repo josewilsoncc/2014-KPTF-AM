@@ -115,4 +115,4 @@ KPTF.Modelo.am_version=1.0;
 KPTF.Modelo.am_log="Modelo basado en Three.js";
 
 //se añade el AM al arreglo de adicion de modular
-KPTF.añadirAM(KPTF.Modelo);
+KPTF.addAM(KPTF.Modelo);

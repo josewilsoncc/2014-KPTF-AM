@@ -75,4 +75,4 @@ KPTF.Pregunta.am_version=1.0;
 KPTF.Pregunta.am_log="Pregunta basado en kptf.js";
 
 //se añade el AM al arreglo de adicion de modular
-KPTF.añadirAM(KPTF.Pregunta);
+KPTF.addAM(KPTF.Pregunta);

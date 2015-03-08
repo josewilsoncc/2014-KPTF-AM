@@ -77,4 +77,4 @@ KPTF.PuntoDeLuz.am_version=0.5;
 KPTF.PuntoDeLuz.am_log="Foco basado en Three.js";
 
 //se añade el AM al arreglo de adicion de modular
-KPTF.añadirAM(KPTF.PuntoDeLuz);
+KPTF.addAM(KPTF.PuntoDeLuz);

@@ -7,14 +7,6 @@
 * @version 1.0
 */
 
-/*
- * TENER EN CUENTA:
- * 
- * Movimiento al renderizar relativo a la velocidad del procesador
- * 
- * Paso de objetos por referencia
- */
-
 var KPTF = {REVISION: '1'};
 
 //Constantes de magnitud.

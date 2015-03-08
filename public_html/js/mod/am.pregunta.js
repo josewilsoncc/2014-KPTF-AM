@@ -22,7 +22,7 @@ KPTF.Pregunta = function(){
     this.puntos=arguments[0];
     this.texto = arguments[1];
     this.respuesta = arguments[2];
-    if(typeof(this.respuesta)===KPTF.TIPO_CADENA)
+    if(typeof(this.respuesta)===KPTF.TYPE_STRING)
         this.respuesta=this.respuesta.toLowerCase().trim();
     this.tipo = arguments[3];
     

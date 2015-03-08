@@ -4,31 +4,23 @@
 *
 * @author Jose Wilson Capera Castaño
 * @author Estefania Alzate Daza
-* @version 1.0
+* @version 1.1
 */
 
-/*
- * TENER EN CUENTA:
- * 
- * Movimiento al renderizar relativo a la velocidad del procesador
- * 
- * Paso de objetos por referencia
- */
+var KPTF = {REVIEW: '1.1'};
 
-var KPTF = {REVISION: '1'};
-
-//Constantes de magnitud.
-KPTF.BAJA=1;
-KPTF.MEDIA=2;
-KPTF.ALTA=3;
+//Constants of magnitude.
+KPTF.LOW=1;
+KPTF.MID=2;
+KPTF.HIGH=3;
 
 //Constantes de tipo.
-KPTF.TIPO_FUNCION = "function";
-KPTF.TIPO_CADENA = "string";
-KPTF.TIPO_NUMERO = "number";
-KPTF.TIPO_OBJETO = "object";
-KPTF.TIPO_INDEFINIDO = "undefined";
-KPTF.TIPO_BOLEANO = "boolean";
+KPTF.TYPE_FUNCTION = "function";
+KPTF.TYPE_STRING = "string";
+KPTF.TYPE_NUMBER = "number";
+KPTF.TYPE_OBJECT = "object";
+KPTF.TYPE_UNDEFINED = "undefined";
+KPTF.TYPE_BOOLEAN = "boolean";
 
 //Constantes de consola
 KPTF.CONSOLA_LOG = 0;

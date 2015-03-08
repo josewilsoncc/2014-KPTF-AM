@@ -35,7 +35,7 @@ KPTF.Modelo=function(){
         self.objetoGeometria=objetoGeometria;
         self.objetoMaterial=objetoMaterial;
         
-        if(typeof(funcion_o_escena)===KPTF.TIPO_FUNCION)
+        if(typeof(funcion_o_escena)===KPTF.TYPE_FUNCTION)
             funcion_o_escena(objeto, objetoGeometria, objetoMaterial);
         else
             funcion_o_escena.añadir(objeto);
@@ -70,30 +70,30 @@ KPTF.ModeloPrecarga=function(){
         this.objetoMaterial;
         this.objetoGeometria;
         this.objeto;
-        if(typeof(ruta_o_material)===KPTF.TIPO_CADENA)
+        if(typeof(ruta_o_material)===KPTF.TYPE_STRING)
             objetoMaterial = new THREE.MeshPhongMaterial({color: 0xffffff, map: THREE.ImageUtils.loadTexture(ruta_o_material)});
-        if(typeof(ruta_o_material)===KPTF.TIPO_OBJETO)
+        if(typeof(ruta_o_material)===KPTF.TYPE_OBJECT)
             objetoMaterial = ruta_o_material;
-        if(typeof(ruta_o_material)===KPTF.TIPO_INDEFINIDO || ruta_o_material===null)
+        if(typeof(ruta_o_material)===KPTF.TYPE_UNDEFINED || ruta_o_material===null)
             objetoMaterial=new THREE.MeshLambertMaterial({color: 0x00ff00});
         objetoGeometria = geometria;
         objeto = new THREE.Mesh(this.objetoGeometria, this.objetoMaterial);
 
-        if(typeof(xyz)===KPTF.TIPO_NUMERO)
+        if(typeof(xyz)===KPTF.TYPE_NUMBER)
             xyz={x: xyz, y:xyz, z:xyz};
         
         objeto.position.x=xyz["x"];
         objeto.position.y=xyz["y"];
         objeto.position.z=xyz["z"];
 
-        if(typeof(escalar)===KPTF.TIPO_NUMERO)
+        if(typeof(escalar)===KPTF.TYPE_NUMBER)
             escalar={x: escalar, y:escalar, z:escalar};
 
         objeto.scale.x=escalar["x"];
         objeto.scale.y=escalar["y"];
         objeto.scale.z=escalar["z"];
 
-        if(typeof(funcion_o_escena)===KPTF.TIPO_FUNCION)
+        if(typeof(funcion_o_escena)===KPTF.TYPE_FUNCTION)
             funcion_o_escena(objeto, objetoGeometria, objetoMaterial);
         else
             funcion_o_escena.añadir(objeto);

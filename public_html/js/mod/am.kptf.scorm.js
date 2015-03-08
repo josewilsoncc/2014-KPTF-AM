@@ -63,7 +63,7 @@ KPTF.SCORM = function() {
      */
     this.completar = function() {
         KPTF.consola("SCORM Completando...");
-        if (typeof(LMSConectado)!==KPTF.TIPO_INDEFINIDO && LMSConectado) {
+        if (typeof(LMSConectado)!==KPTF.TYPE_UNDEFINED && LMSConectado) {
             KPTF.consola("SCORM Conexion viva...");
             var exito = _scorm.set(ESTADO_DE_LA_LECCION, COMPLETA);
             if (exito){

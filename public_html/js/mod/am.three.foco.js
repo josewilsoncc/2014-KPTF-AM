@@ -30,7 +30,7 @@ KPTF.PuntoDeLuz = function(){
         this.objeto.position = new THREE.Vector3(arguments[1],arguments[2],arguments[3]);
     }
     
-    if(KPTF.calidad===KPTF.ALTA)
+    if(KPTF.calidad===KPTF.HIGH)
         this.objeto.castShadow=true;
     
     /*

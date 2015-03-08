@@ -9,7 +9,7 @@
 
 KPTF.iniciar();
 //KPTF.incluirCSS("estilo");
-KPTF.incluirJS("cod/renderizado");
+KPTF.includeJS("cod/renderizado");
 
 window.onload = function(){
     iniciarRenderizado();

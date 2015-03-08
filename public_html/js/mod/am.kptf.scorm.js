@@ -29,7 +29,7 @@ KPTF.SCORM = function() {
             NombreDelEstudiante = _scorm.get(NOMBRE_DEL_ESTUDIANTE);
         }
         else
-            KPTF.consola("Error: No se pudo conectar con el LMS.", KPTF.CONSOLE_WARN);
+            KPTF.console("Error: No se pudo conectar con el LMS.", KPTF.CONSOLE_WARN);
         
         if(parent.document.getElementById("page-mod-scorm-player")!==null){
             parent.document.getElementById("page-mod-scorm-player").style.padding="0";
@@ -51,10 +51,10 @@ KPTF.SCORM = function() {
             _scorm.set(CALIFICACION_MINIMA, minima);
             _scorm.set(CALIFICACION_MAXIMA, maxima);
             _scorm.set(CALIFICACION_OPTENIDA, total);
-            KPTF.consola("La calificación fue guardada.");
+            KPTF.console("La calificación fue guardada.");
         }
         else
-            KPTF.consola("La calificación no pudo se guardada porque no existe una conexión.", KPTF.CONSOLE_WARN);
+            KPTF.console("La calificación no pudo se guardada porque no existe una conexión.", KPTF.CONSOLE_WARN);
     };
 
     /*
@@ -62,19 +62,19 @@ KPTF.SCORM = function() {
      * y cerrar la ventana en un ambiente real (LMS)
      */
     this.completar = function() {
-        KPTF.consola("SCORM Completando...");
+        KPTF.console("SCORM Completando...");
         if (typeof(LMSConectado)!==KPTF.TYPE_UNDEFINED && LMSConectado) {
-            KPTF.consola("SCORM Conexion viva...");
+            KPTF.console("SCORM Conexion viva...");
             var exito = _scorm.set(ESTADO_DE_LA_LECCION, COMPLETA);
             if (exito){
                _scorm.quit();
                parent.window.close();
             }
             else
-                KPTF.consola("Error: El SCORM no pudo cambiarse al estado completado!", KPTF.CONSOLE_ERROR);
+                KPTF.console("Error: El SCORM no pudo cambiarse al estado completado!", KPTF.CONSOLE_ERROR);
         }
         else
-            KPTF.consola("Error: No se pudo conectar con el LMS.", KPTF.CONSOLE_ERROR);
+            KPTF.console("Error: No se pudo conectar con el LMS.", KPTF.CONSOLE_ERROR);
     };
     
     /*

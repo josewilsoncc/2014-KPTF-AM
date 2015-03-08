@@ -44,7 +44,7 @@ KPTF.addAM = function (am) {
  */
 KPTF.iniciar = function () {
   for (var i = 0; i < KPTF.AM.length; i++) {
-    KPTF.consola("Iniciando AM ID:" + KPTF.AM[i].am_id + " -> " + KPTF.AM[i].am_log);
+    KPTF.console("Iniciando AM ID:" + KPTF.AM[i].am_id + " -> " + KPTF.AM[i].am_log);
     KPTF.AM[i].iniciar();
   }
   KPTF.configurar();
@@ -54,7 +54,7 @@ KPTF.iniciar = function () {
  * Incluye un JS al html actual en el head.
  * @param {object} js Es javascript que se añadira
  */
-KPTF.incluirJS = function (js)
+KPTF.includeJS = function (js)
 {
   document.writeln("<script src='js/" + js + ".js'><" + "/script>");
 };
@@ -87,9 +87,9 @@ KPTF.incluirAM = function (am)
 KPTF.requiereAM = function (requerido, version, dependiente) {
   var am = KPTF.obtenerAM(requerido);
   if (am === false)
-    KPTF.consola("Falta el AM id:" + requerido + ", requerido por el AM id:" + dependiente.am_id, KPTF.CONSOLE_ERROR);
+    KPTF.console("Falta el AM id:" + requerido + ", requerido por el AM id:" + dependiente.am_id, KPTF.CONSOLE_ERROR);
   else if (am.am_version < version)
-    KPTF.consola("El AM id:" + requerido + " debe estar actualizado a la version " + version + ", requerido por el AM id:" + dependiente.am_id, KPTF.CONSOLE_ERROR);
+    KPTF.console("El AM id:" + requerido + " debe estar actualizado a la version " + version + ", requerido por el AM id:" + dependiente.am_id, KPTF.CONSOLE_ERROR);
 };
 
 /*
@@ -103,14 +103,12 @@ KPTF.obtenerAM = function (id) {
   return false;
 };
 
-KPTF.includeJS = KPTF.incluirJS;
-
 //Incluyendo la libreria Three.js
-KPTF.incluirJS("lib/three.min");
+KPTF.includeJS("lib/three.min");
 //Incluyendo la libreria Physi.js
-KPTF.incluirJS("lib/physi");
+KPTF.includeJS("lib/physi");
 //Incluyendo la libreria Jquery.js
-KPTF.incluirJS("lib/jquery-2.1.1.min");
+KPTF.includeJS("lib/jquery-2.1.1.min");
 //Incluyendo la libreria Buzz.js
 KPTF.includeJS("lib/buzz.min");
 //Incluyendo la libreria SCORM_API_wrapper.js
@@ -118,9 +116,9 @@ KPTF.includeJS("lib/SCORM_API_wrapper");
 //Incluyendo la libreria bootstrap.min.js
 KPTF.includeJS("lib/bootstrap.min");
 //Incluyendo el modulo de configuracion
-KPTF.incluirJS("configuracion");
+KPTF.includeJS("configuracion");
 //Incluyendo el modulo principal
-KPTF.incluirJS("main");
+KPTF.includeJS("main");
 
 //Funcion de prueba para verificar que el archivo KPTF esta vinculado al HTML
 KPTF.holaMundo = function ()
@@ -139,7 +137,7 @@ KPTF.holaMundo = function ()
  * CONSOLE_ERROR muestra un mensaje de error con un icono y fondo en color rojo.
  * 
  */
-KPTF.consola = function () {
+KPTF.console = function () {
   var mensaje = arguments[0] || "";
   mensaje = "KPTF -> " + mensaje;
   var tipo = arguments[1] || KPTF.CONSOLE_LOG;

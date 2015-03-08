@@ -44,9 +44,9 @@ KPTF.Pregunta = function(){
                 break;
             case KPTF.Pregunta.TIPO_CHEQUEO:
                 var porcentaje=0;
-                KPTF.consola("Tipo_chequeo");
+                KPTF.console("Tipo_chequeo");
                 for(var i=0;i<respuesta.length;i++){
-                    KPTF.consola("if "+respuesta[i]+" === "+this.respuesta[i]);
+                    KPTF.console("if "+respuesta[i]+" === "+this.respuesta[i]);
                     if(respuesta[i]===this.respuesta[i])
                         porcentaje++;
                 }

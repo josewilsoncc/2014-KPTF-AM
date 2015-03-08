@@ -33,7 +33,7 @@ KPTF.Teclado.funcionesTeclaAbajo=new Array();
  * @param evento {objeto} Es el evento unico que produce una tecla
  */
 KPTF.Teclado.teclaArriba=function(evento){
-    //KPTF.consola("Tecla arriba: "+evento.keyCode);
+    //KPTF.console("Tecla arriba: "+evento.keyCode);
     for (var i = 0; i< KPTF.Teclado.funcionesTeclaArriba.length; i++){
         var funcion = KPTF.Teclado.funcionesTeclaArriba[i];
         funcion(evento);
@@ -45,7 +45,7 @@ KPTF.Teclado.teclaArriba=function(evento){
  * @param evento {objeto} Es el evento unico que produce una tecla
  */
 KPTF.Teclado.teclaPresionada=function(evento){
-    //KPTF.consola("Tecla presionada: "+evento.keyCode);
+    //KPTF.console("Tecla presionada: "+evento.keyCode);
     for (var i = 0; i< KPTF.Teclado.funcionesTeclaPresionada.length; i++){
         var funcion = KPTF.Teclado.funcionesTeclaPresionada[i];
         funcion(evento);
@@ -57,7 +57,7 @@ KPTF.Teclado.teclaPresionada=function(evento){
  * @param evento {objeto} Es el evento unico que produce una tecla
  */
 KPTF.Teclado.teclaAbajo=function(evento){
-    //KPTF.consola("Tecla abajo: "+evento.keyCode);
+    //KPTF.console("Tecla abajo: "+evento.keyCode);
     for (var i = 0; i< KPTF.Teclado.funcionesTeclaAbajo.length; i++){
         var funcion = KPTF.Teclado.funcionesTeclaAbajo[i];
         funcion(evento);

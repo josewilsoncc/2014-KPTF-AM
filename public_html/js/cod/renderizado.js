@@ -10,6 +10,10 @@ var render;
 var escena;
 var camara;
 
+var cubeG;
+var cubeM;
+var cube;
+
 //Foco de luz
 var foco = new KPTF.PuntoDeLuz(0xFFFFFF);
 
@@ -24,6 +28,18 @@ function iniciarRenderizado() {
     camara.cambiarAspecto(window.innerWidth / window.innerHeight);
 
     KPTF.Renderizador.lienzo("canvas", render);
+    
+    cubeG = new THREE.BoxGeometry(4, 4, 4);
+    cubeM = new THREE.MeshBasicMaterial({color: 0xFF0000, wireframe: true});
+    cube = new THREE.Mesh(cubeG, cubeM);
+    
+    cube.position.x = 0;
+    cube.position.y = 0;
+    cube.position.z = 0;
+    
+    camara.ubicar(10, 10, 10, cube);
+    
+    escena.añadir(cube);
 
     KPTF.miHilo.añadirTarea(frender, 0, true);
     

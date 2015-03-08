@@ -29,7 +29,7 @@ KPTF.SCORM = function() {
             NombreDelEstudiante = _scorm.get(NOMBRE_DEL_ESTUDIANTE);
         }
         else
-            KPTF.consola("Error: No se pudo conectar con el LMS.", KPTF.CONSOLA_ADVERTIR);
+            KPTF.consola("Error: No se pudo conectar con el LMS.", KPTF.CONSOLE_WARN);
         
         if(parent.document.getElementById("page-mod-scorm-player")!==null){
             parent.document.getElementById("page-mod-scorm-player").style.padding="0";
@@ -54,7 +54,7 @@ KPTF.SCORM = function() {
             KPTF.consola("La calificación fue guardada.");
         }
         else
-            KPTF.consola("La calificación no pudo se guardada porque no existe una conexión.", KPTF.CONSOLA_ADVERTIR);
+            KPTF.consola("La calificación no pudo se guardada porque no existe una conexión.", KPTF.CONSOLE_WARN);
     };
 
     /*
@@ -71,10 +71,10 @@ KPTF.SCORM = function() {
                parent.window.close();
             }
             else
-                KPTF.consola("Error: El SCORM no pudo cambiarse al estado completado!", KPTF.CONSOLA_ERROR);
+                KPTF.consola("Error: El SCORM no pudo cambiarse al estado completado!", KPTF.CONSOLE_ERROR);
         }
         else
-            KPTF.consola("Error: No se pudo conectar con el LMS.", KPTF.CONSOLA_ERROR);
+            KPTF.consola("Error: No se pudo conectar con el LMS.", KPTF.CONSOLE_ERROR);
     };
     
     /*
